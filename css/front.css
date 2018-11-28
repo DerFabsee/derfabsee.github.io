@@ -42,6 +42,14 @@ body {
     margin-bottom: 40px;
  }
 }
+@media screen and (min-width: 1600px) {
+#avatar {
+    height: 10vw;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 40px;
+ }
+}
 @media screen and (max-width: 600px) {
 h1 {
     color: white;
@@ -72,6 +80,16 @@ h1 {
     margin: -10px 0;
   }
 }
+@media screen and (min-width: 1600px) {
+h1 {
+    color: white;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    font-size: 3vw;
+    font-family: 'Permanent Marker', cursive;
+    margin: -10px 0;
+  }
+}
 @media screen and (max-width: 600px) {
 h3 {
     color: white;
@@ -97,6 +115,15 @@ h3 {
     font-family: 'Sofadi One', cursive;
     font-weight: thin;
     font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1600px) {
+h3 {
+    color: white;
+    padding-bottom: 1vw;
+    font-family: 'Sofadi One', cursive;
+    font-weight: thin;
+    font-size: 1.5vw;
   }
 }
 .content {
