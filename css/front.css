@@ -41,6 +41,7 @@ h3 {
 .content {
     padding-top: 100px;
     padding-bottom: 40px;
+    margin:auto;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
