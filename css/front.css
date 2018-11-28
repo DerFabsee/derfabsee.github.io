@@ -18,11 +18,29 @@ body {
     top: 0;
     left: 0;
 }
+@media screen and (max-width: 600px) {
 #avatar {
-    height: 13vw;
+    height: 30vw;
     border-radius: 100%;
     border: 5px solid white;
     margin-bottom: 40px;
+ }
+}
+@media screen and (min-width: 601px) {
+#avatar {
+    height: 35vw;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 40px;
+ }
+}
+@media screen and (min-width: 1200px) {
+#avatar {
+    height: 20vw;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 40px;
+ }
 }
 @media screen and (max-width: 600px) {
 h1 {
