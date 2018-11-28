@@ -35,4 +35,4 @@ favicon_img_path: "imgs/favicon.ico"
 markdown: kramdown
 permalink: pretty
 
-theme: jekyll-theme-hacker
+theme: jekyll-theme-cayman
