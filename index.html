@@ -33,9 +33,6 @@ permalink: /
             <h3>{{ site.description }}</h3>
 
                 <ul>
-                    {% if site.twitch_username %}
-                    <li><a class="fab fa-2x fa-twitch" href="https://twitch.tv/{{ site.twitch_username }}"><span class="description">Twitch</span></a></li>
-                    {% endif %}
 
                     {% if site.github_username %}
                     <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
@@ -43,6 +40,10 @@ permalink: /
 
                     {% if site.codepen_username %}
                     <li><a class="fa fa-2x fa-codepen" href="https://codepen.io/{{ site.codepen_username }}"><span class="description">CodePen</span></a></li>
+                    {% endif %}
+
+                    {% if site.twitch_username %}
+                    <li><a class="fab fa-2x fa-twitch" href="https://twitch.tv/{{ site.twitch_username }}"><span class="description">Twitch</span></a></li>
                     {% endif %}
 
                     {% if site.facebook_username %}
