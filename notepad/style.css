@@ -49,11 +49,19 @@ textarea {
     height:50px;
     bottom:20px;
     right:20px;
-    background-color:#0C9;
+    background-color:#9147FF;
     color:#FFF;
     border-radius:50px;
     text-align:center;
     box-shadow: 2px 2px 3px #999;
+}
+
+.float:hover {background-color: #772CE8}
+
+.float:active {
+  background-color: #772CE8;
+  box-shadow: 3px 3px 4px #666;
+  transform: translate(2px, 2px);
 }
 
 .my-float{
