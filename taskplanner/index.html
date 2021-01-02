@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Task planner</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main ng-app='sch' ng-controller='mainCtrl'>
+
+	<div class='head'>
+		<span style='color:#51e980;'>&#x2611;</span>&nbsp;Task planner
+	</div>
+	<div class='new'>
+		<strong style='font-size:13px;'><span class='length' ng-bind='50 - post.length'></span> characters left</strong><br /><br />
+		<input type='text' maxlength='50' id='new' ng-model='post' />
+		<button class='addNew' ng-click='postit(post)'>+</button>
+		<label for='new'>Make a post</label>
+	</div>
+	<div class='list'>
+		<div class='seph'>Pending tasks</div>
+		<ul>
+			<li ng-hide='k.done' class='untshow' ng-repeat='k in all track by $index'>
+			<div class='controls'>
+				<input type='checkbox' ng-model='k.done' />
+				<button class='contra' id='edit' ng-click="editit($index)">&#x270E;&nbsp;Edit</button>
+				<button class='contra' id='del' ng-click="all.splice($index,1)">&#x26D4;&nbsp;Delete</button>
+			</div>
+			<div class='timen' ng-bind='k.time'></div>
+			<span ng-bind='k.cont'></span>
+			</li>
+		</ul>
+	</div>
+	<div class='list'>
+		<div class='seph'>Completed tasks</div>
+		<ul>
+			<li ng-show='k.done' class='untshow done' ng-repeat='k in all track by $index'>
+			<div class='controls'>
+				<input type='checkbox' ng-model='k.done' />
+				<button class='contra' id='edit' ng-click="editit($index)">&#x270E;&nbsp;Edit</button>
+				<button class='contra' id='del' ng-click="all.splice($index)">&#x26D4;&nbsp;Delete</button>
+			</div>
+			<div class='timen' ng-bind='k.time'></div>
+			<span ng-bind='k.cont'></span>
+			</li>
+		</ul>
+	</div>
+
+
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

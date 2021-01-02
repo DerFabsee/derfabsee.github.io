@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+  color: #777;
+}
+
+main {
+  width: 350px;
+  min-height: 450px;
+  background: #fff;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 40px 10px;
+  text-align: center;
+  box-shadow: 0 0 10px 3px #000;
+  -webkit-box-shadow: 0 0 10px 3px #000;
+  -moz-box-shadow: 0 0 10px 3px #000;
+  -o-box-shadow: 0 0 10px 3px #000;
+  -ms-box-shadow: 0 0 10px 3px #000;
+}
+main .head {
+  font-size: 30px;
+}
+
+.new {
+  margin: 30px auto;
+  height: 50px;
+}
+.new label[for=new] {
+  display: block;
+  margin-top: -25px;
+  margin-left: -15px;
+  color: #777;
+  font-size: 20px;
+  cursor: text;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+.new input#new {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-bottom: 2px solid #777;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+.new input#new:focus {
+  border-color: #f44336;
+}
+.new input#new:focus ~ label[for=new] {
+  color: #f44336;
+  font-size: 13px;
+  margin-top: -45px;
+  margin-left: -180px;
+}
+.new button.addNew {
+  border: none;
+  outline: none;
+  background-color: #51e980;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+.new button.addNew:hover {
+  background-color: #18bc4b;
+}
+
+.list {
+  border-top: 2px solid #ddd;
+}
+.list ul {
+  list-style-type: none;
+}
+.list ul .untshow {
+  text-align: left;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-left: 5px solid transparent;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+.list ul .untshow:hover {
+  border-left-color: #f44336;
+}
+.list ul .untshow span {
+  display: block;
+  max-width: 130px;
+  word-wrap: break-word;
+  font-size: 17px;
+}
+
+.controls {
+  display: inline-block;
+  padding: 5px;
+  float: right;
+  margin-top: 10px;
+}
+.controls button.contra {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+.controls #edit:hover {
+  color: #4CAF50;
+}
+.controls #del:hover {
+  color: #f44336;
+}
+
+.seph {
+  text-align: left;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.timen {
+  font-size: 10px;
+  color: #fccbc7;
+  cursor: default;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+.timen:hover {
+  color: #f77066;
+}
